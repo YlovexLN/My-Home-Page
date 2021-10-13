@@ -19,8 +19,8 @@ body {
     overflow: -Scroll;
     overflow: hidden;
     min-height: 100vh;
-    background-image: linear-gradient(to left, rgba(255, 0, 149, 0.2), rgba(0, 247, 255, 0.2)), url(https://photo.ylovexln.cn/819506.png);
-    /*background-image: url(https://photo.ylovexln.cn/819506.png) ;*/
+    background-image: linear-gradient(to left, rgba(255, 0, 149, 0.2), rgba(0, 247, 255, 0.2)), url(https://ylovexln.oss-cn-hangzhou.aliyuncs.com/819506.png);
+    /*background-image: url(https://ylovexln.oss-cn-hangzhou.aliyuncs.com/819506.png) ;*/
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
