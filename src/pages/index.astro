@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Hero } from '../components/Hero';
+import { Nav } from '../components/Nav';
+import { Footer } from '../components/Footer';
+import { ThemeToggle } from '../components/ThemeToggle';
+---
+
+<Layout title="YlovexLN | 竹顾渊丶">
+  <div class="h-screen transition-colors duration-300 relative overflow-hidden flex flex-col items-center justify-between">
+    <!-- 全屏背景图片 -->
+    <div class="absolute inset-0 z-[-2] bg-[url('https://qiniu.ylovexln.top/819506.png')] bg-cover bg-top bg-no-repeat opacity-100 dark:opacity-40"></div>
+    <!-- 遮罩层 -->
+    <div class="absolute inset-0 z-[-1] bg-black/10 dark:bg-black/50"></div>
+
+    <!-- 主题切换按钮 -->
+    <div class="fixed top-4 right-4 z-50">
+      <ThemeToggle client:load />
+    </div>
+
+    <!-- 中间毛玻璃主卡片 -->
+    <div class="flex-grow flex items-center justify-center w-full px-4 shrink-0 overflow-hidden">
+      <main class="relative w-full max-w-[800px] bg-white/90 dark:bg-[#1A231A] border border-white/50 dark:border-white/[0.08] rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.06)] px-14 py-12 min-h-[480px] flex flex-col items-center justify-center">
+        <Hero client:load />
+        <Nav client:load />
+      </main>
+    </div>
+
+    <Footer client:load />
+  </div>
+</Layout>

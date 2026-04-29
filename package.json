@@ -1,0 +1,32 @@
+{
+  "name": "my-home-page",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.4.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.4.10",
+    "lucide-react": "^0.479.0",
+    "tailwind-merge": "^3.0.2"
+  },
+  "devDependencies": {
+    "@astrojs/react": "^5.0.3",
+    "@tailwindcss/vite": "4",
+    "@types/node": "^24.12.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "tailwindcss": "4",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.58.0"
+  }
+}

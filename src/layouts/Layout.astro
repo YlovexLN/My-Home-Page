@@ -1,0 +1,48 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+import "../styles/index.css";
+---
+
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="井底之蛙，虽不知大海之宽阔，却知晓天空之蓝！"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,user-scalable=no"
+    />
+    <link
+      rel="shortcut icon"
+      href="
+https://qiniu.ylovexln.top/blog/favicon.ico"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="keywords"
+      content="个人主页,YlovexLN,个人博客,Minecraft,steam,bilibili,我的世界"
+    />
+    <meta itemprop="name" content="YlovexLN|竹顾渊丶的个人主页" />
+    <meta name="baidu-site-verification" content="zqxQAohuoC" />
+    <meta
+      itemprop="image"
+      content="https://qiniu.ylovexln.top/blog/avatar.jpg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+    <!--Vercount--不蒜子计数完美替代方案-->
+    <script async src="https://events.vercount.one/js"></script>
+  </body>
+</html>
